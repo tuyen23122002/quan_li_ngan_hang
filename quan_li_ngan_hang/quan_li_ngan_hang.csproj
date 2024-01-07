@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DEC76F3-7218-4C79-98FF-14C324358605}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>quan_li_ngan_hang</RootNamespace>
+    <AssemblyName>quan_li_ngan_hang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionSQL.cs" />
+    <Compile Include="FormBaocaosotietkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaocaosotietkiem.Designer.cs">
+      <DependentUpon>FormBaocaosotietkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formchuongtrinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formchuongtrinh.Designer.cs">
+      <DependentUpon>Formchuongtrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdangnhap1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdangnhap1.Designer.cs">
+      <DependentUpon>Formdangnhap1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdoimatkhau1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdoimatkhau1.Designer.cs">
+      <DependentUpon>Formdoimatkhau1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formnhanvien1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formnhanvien1.Designer.cs">
+      <DependentUpon>Formnhanvien1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsotietkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsotietkiem.Designer.cs">
+      <DependentUpon>Formsotietkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSovay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSovay.Designer.cs">
+      <DependentUpon>FormSovay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formtaikhoankh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formtaikhoankh.Designer.cs">
+      <DependentUpon>Formtaikhoankh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formtinhtienlai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formtinhtienlai.Designer.cs">
+      <DependentUpon>Formtinhtienlai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBaocaosotietkiem.resx">
+      <DependentUpon>FormBaocaosotietkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formchuongtrinh.resx">
+      <DependentUpon>Formchuongtrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdangnhap1.resx">
+      <DependentUpon>Formdangnhap1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdoimatkhau1.resx">
+      <DependentUpon>Formdoimatkhau1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formnhanvien1.resx">
+      <DependentUpon>Formnhanvien1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsotietkiem.resx">
+      <DependentUpon>Formsotietkiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSovay.resx">
+      <DependentUpon>FormSovay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formtaikhoankh.resx">
+      <DependentUpon>Formtaikhoankh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formtinhtienlai.resx">
+      <DependentUpon>Formtinhtienlai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\295128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ronaldo.ioc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ronaldo.ioc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annotation 2023-01-27 214517.ioc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phan-dinh-giot-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-bank-icon-png-image_708594.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4084371078624_09e989e516d2ef2b153057e137f42cd1.ioc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-bank-icon-png-image_708594 %281%29.ioc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-bank-icon-png-image_708594 %281%29.ioc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4084371078624_09e989e516d2ef2b153057e137f42cd1.ioc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-466470965-612x612ioc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-quit-symbol-isolated-white-black-simple-interface-web-quit-symbol-isolated-white-background-129560503.ioc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-password-icon-symbol-access-vector-png-image_5125698.ioc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\.ioc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3893135.ioc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\.ioc.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
